@@ -7,7 +7,10 @@ long double chudnovsky(int n);
 int factorial(int n);
 
 int main() {
-    printf("Pi: %Lf\n", sumChudnovsky(0, 1));
+    int start = 0;
+    int end = 10;
+    printf("Sum of Chudnovsky series from %d to %d is %.15Lf\n", start, end, sumChudnovsky(start, end));
+    return 0;
 }
 
 int factorial(int n) {
